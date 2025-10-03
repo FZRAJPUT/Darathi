@@ -1,0 +1,251 @@
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ffd6e8, #ff9edc); /* pink gradient background */
+  color: #4a0f4a; /* dark pink text */
+}
+
+/* Hidden audio */
+.song {
+  visibility: hidden;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+/* Birthday link */
+.birthday-link {
+  color: #ff1a8c; /* bright pink */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px #fff; /* glossy text effect */
+}
+
+.birthday-link:hover {
+  color: #ff66b2; /* lighter pink on hover */
+  text-decoration: underline;
+}
+
+/* Divs inside container */
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+/* Section 1 */
+.one {
+  font-size: 4.5rem;
+  color: #ff1a8c;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+/* Greetings */
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #fff;
+  text-shadow: 1px 1px 3px #ff99cc;
+}
+
+.three {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #ff99cc;
+}
+
+/* Chatbox */
+.four .text-box {
+  border: 3px solid #ff99cc;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  background: linear-gradient(145deg, #ffc0e0, #ff99cc); /* pink glossy */
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  color: #4a0f4a;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: #ff1a8c;
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+/* Section 5 */
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  color: #ff1a8c;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #ff99cc;
+  color: #fff;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+}
+
+.idea-5 span, .idea-6 span, .wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 6rem;
+  background: linear-gradient(145deg, #ff66b2, #ff3399);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
+}
+
+/* Section 6 */
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+}
+
+.six .hat {
+  left: 41.5%;
+  position: absolute;
+  top: -35%;
+  width: 80px;
+  filter: drop-shadow(2px 2px 4px #ff99cc);
+}
+
+/* Balloons */
+.baloons img {
+  display: inline-block;
+  position: absolute;
+  filter: drop-shadow(0 4px 6px rgba(255, 105, 180, 0.7));
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+/* Sections 7 & 8 */
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+/* Section 6 wish */
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ff1a8c;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px #ff99cc;
+}
+
+/* Section 9 */
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+  text-shadow: 1px 1px 3px #ff99cc;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Media Queries */
+@media screen and (max-height: 1000px) {
+  .six .hat { left: 40%; }
+}
+@media screen and (max-height: 800px) {
+  .six .hat { left: 37%; }
+}
+@media screen and (max-height: 700px) {
+  .six .hat { left: 32%; }
+}
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .six .hat { left: 32%; }
+}
+@media screen and (max-width: 500px) {
+  .container { width: 90%; }
+  .four .text-box { width: 90%; }
+  .text-box .fake-btn { bottom: -38px; right: 5px; }
+  .idea-5 span { display: block; }
+  .idea-6 span { font-size: 4rem; }
+  .six .hat { width: 50px; }
+  .wish-hbd { font-size: 1.8em; }
+  .wish h5 { font-size: 1.4rem; }
+  .nine p { font-size: 1.5rem; font-weight: lighter; }
+}
